@@ -1,55 +1,55 @@
-body {
+/* body {
   background-color: #fefefe;
   font-family: "Yu Gothic", sans-serif;
-}
+} */
 
 .menu-container {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 20px;
 }
 
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 .menu-item {
-  background-color: #000;
+  background-color: #000; /* 黒背景 */
   color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
+  padding: 5px;
   text-align: center;
-  padding: 8px;
 }
 
 .menu-item img {
   width: 100%;
-  border-radius: 4px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .price {
-  font-size: 1.4rem;
-  color: #aadfff;
-  margin: 4px 0;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 .name {
-  font-size: 1rem;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
-.navigation {
-  margin-top: 20px;
-  text-align: center;
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.navigation button {
-  background-color: #e33;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
+.prev, .next {
+  background-color: #c00;
+  color: #fff;
   padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 6px;
-  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
 }
