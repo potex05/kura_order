@@ -1,74 +1,43 @@
 body {
-  font-family: "Yu Gothic", sans-serif;
-  background: #000;
-  margin: 0;
-}
-
-#app {
-  max-width: 480px;
-  margin: 0 auto;
-  background: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  background: #D32F2F; /* 赤 */
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  border-bottom: 4px solid #B71C1C;
-}
-
-main {
-  flex: 1;
-  padding: 10px;
-  background: #f2f2f2;
-}
-
-.category, .item {
-  border: 2px solid #000;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  background: white;
-  cursor: pointer;
-  transition: transform 0.1s;
-}
-
-.category:hover, .item:hover {
-  transform: scale(1.05);
-}
-
-.category {
-  background: linear-gradient(to bottom, #fff, #eee);
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-}
-
-.item h2 {
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.item p {
-  font-size: 16px;
-  color: #555;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-/* 戻るボタン用 */
-.category.back-btn {
-  background: #333;
+  background-color: #000;
   color: #fff;
-  border-color: #000;
+  font-family: sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.product-card {
+  background-color: #1A1A1A;
+  border: 1px solid #444;
+  padding: 5px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.product-price {
+  color: #FFD700;
+  font-size: 1.2em;
+}
+
+.pagination button {
+  background-color: #E60012;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
 }
