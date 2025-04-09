@@ -29,3 +29,10 @@ header {
 img {
   max-width: 100%;
 }
+
+/* 戻るボタン用 */
+.category.back-btn {
+  background: #333;
+  color: #fff;
+  border-color: #000;
+}
