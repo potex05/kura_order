@@ -31,5 +31,3 @@ function showItems(categoryId) {
   backBtn.addEventListener('click', showCategories);
   mainContent.appendChild(backBtn);
 }
-
-showCategories();
