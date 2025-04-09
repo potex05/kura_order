@@ -1,43 +1,55 @@
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: sans-serif;
+  background-color: #fefefe;
+  font-family: "Yu Gothic", sans-serif;
 }
 
-.product-grid {
+.menu-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px;
+  gap: 12px;
 }
 
-.product-card {
-  background-color: #1A1A1A;
-  border: 1px solid #444;
-  padding: 5px;
+.menu-item {
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: #aadfff;
+  margin: 4px 0;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.navigation {
+  margin-top: 20px;
   text-align: center;
 }
 
-.product-card img {
-  width: 100%;
-  height: auto;
-}
-
-.product-name {
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.product-price {
-  color: #FFD700;
-  font-size: 1.2em;
-}
-
-.pagination button {
-  background-color: #E60012;
-  color: #fff;
+.navigation button {
+  background-color: #e33;
+  color: white;
+  font-size: 1.2rem;
   border: none;
   padding: 10px 20px;
-  margin: 10px;
-  font-size: 1em;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
