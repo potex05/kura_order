@@ -26,8 +26,8 @@ function showItems(categoryId) {
   });
 
   const backBtn = document.createElement('div');
-  backBtn.className = 'category';
-  backBtn.textContent = '← 戻る';
+  backBtn.className = 'category back-btn';
+  backBtn.textContent = '← メニューに戻る';
   backBtn.addEventListener('click', showCategories);
   mainContent.appendChild(backBtn);
 }
